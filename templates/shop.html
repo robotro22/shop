@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магаз</title>
+</head>
+<body>
+    <h1>Добро пожаовать в Барахолку</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{product.name}} - {{product.description}} - {{ product.price}}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">return to home</a>
+</body>
+</html>
